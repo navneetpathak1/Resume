@@ -1,0 +1,129 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5} % For icons
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1\vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProjectHeading}[3]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \href{#3}{\raisebox{-0.2\height}\faGithub\ GitHub} & \textbf{#2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Navneet Pathak} \\ \vspace{2pt}
+    \small
+    \href{tel:+918923651177}{\raisebox{-0.1\height}\faPhone\ +91-8923651177} \quad
+    \href{mailto:navneetpathak1909@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ navneetpathak1909@gmail.com} \quad
+    \href{https://github.com/navneetpathak1}{\raisebox{-0.2\height}\faGithub\ GitHub} \quad
+    \href{https://leetcode.com/navendupandey_14}{\raisebox{-0.2\height}\faLaptopCode\ LeetCode}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Graphic Era Hill University, Bhimtal}{2022 -- 2026}
+    {Bachelor of Technology (B.Tech) in Computer Science and Engineering}{}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {Digital Wallet Platform (React.js, Express.js, MongoDB, Tailwind CSS)}{}{https://github.com/navneetpathak1/Payment_app}
+    \resumeItemListStart
+      \resumeItem{Developed a peer-to-peer (P2P) payment application enabling users to transfer virtual currency securely.}
+      \resumeItem{Implemented authentication, user management, transaction history, and protected routes.}
+      \resumeItem{Applied REST APIs and JWT for secure backend communication and data security.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Real-Time Chat Application (MERN Stack, Socket.IO, Tailwind CSS)}{}{https://github.com/navneetpathak1/Real-time-chat-app}
+    \resumeItemListStart
+      \resumeItem{Built a multi-user messaging platform supporting real-time chat using WebSockets and Socket.IO.}
+      \resumeItem{Designed and deployed a mobile-responsive UI; features include typing indicators and live messaging.}
+      \resumeItem{Deployed backend with Node.js and MongoDB Atlas for scalability and high availability.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Udemy-Like Online Learning System (MERN Stack)}{}{https://github.com/navneetpathak1/New-Project}
+    \resumeItemListStart
+      \resumeItem{Created a course management system supporting course creation, purchase, and video content streaming.}
+      \resumeItem{Integrated secure payment gateway using Stripe APIs; optimized MongoDB queries for fast access.}
+      \resumeItem{Built protected admin and user dashboards for course tracking and management.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Programming Languages:} C, C++, JavaScript (ES6+), SQL
+    \item \textbf{Frameworks/Libraries:} React.js, Express.js, Node.js, Socket.IO, Tailwind CSS
+    \item \textbf{Databases:} MongoDB, PostgreSQL, MySQL
+    \item \textbf{Cloud/Tools:} AWS, Postman, Git, GitHub, Prisma ORM
+    \item \textbf{Concepts:} Data Structures and Algorithms (DSA), REST APIs, Agile Development, Software Engineering Principles
+\end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Generative AI Learning Plan for Developers}{Apr 2025}
+    {Amazon Web Services (AWS)}{}
+
+  \resumeSubheading
+    {AWS Artificial Intelligence Practitioner Learning Plan}{Apr 2025}
+    {Amazon Web Services (AWS)}{}
+
+  \resumeSubheading
+    {DevOps Engineer Learning Plan (includes Labs)}{Apr 2025}
+    {Amazon Web Services (AWS)}{}
+
+  \resumeSubheading
+    {Cloud Operator (SysOps) Learning Plan}{Apr 2025}
+    {Amazon Web Services (AWS)}{}
+
+  \resumeSubheading
+    {Advanced Software Engineering Virtual Experience}{Apr 2025}
+    {Walmart USA - Forage Platform}{}
+    \resumeItemListStart
+      \resumeItem{Completed real-world simulations in Data Structures, Software Architecture, and Database Design.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
