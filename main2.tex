@@ -1,0 +1,128 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{\item\small{{#1\vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProjectHeading}[3]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \href{#3}{\raisebox{-0.2\height}\faGithub\ GitHub} & \textbf{#2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Navneet Pathak} \\ \vspace{2pt}
+    \small
+    \href{tel:+918923651177}{\raisebox{-0.1\height}\faPhone\ +91-8923651177} \quad
+    \href{mailto:navneetpathak1909@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ navneetpathak1909@gmail.com} \quad
+    \href{https://github.com/navneetpathak1}{\raisebox{-0.2\height}\faGithub\ GitHub} \quad
+    \href{https://leetcode.com/navneetpathak19}{\raisebox{-0.2\height}\faLaptopCode\ LeetCode} \quad
+    \href{https://www.linkedin.com/in/navneetpathak1909/}{\raisebox{-0.2\height}\faLinkedin\ LinkedIn}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Graphic Era Hill University, Bhimtal}{2022 -- 2026}
+    {B.Tech in Computer Science and Engineering}{}  
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {Digital Wallet Platform (React.js, Express.js, MongoDB)}{}{https://github.com/navneetpathak1/Payment_app}
+    \resumeItemListStart
+      \resumeItem{Built a secure P2P payment app with JWT auth, REST APIs, and transaction history.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Real-Time Chat Application (MERN Stack, Socket.IO)}{}{https://github.com/navneetpathak1/Real-time-chat-app}
+    \resumeItemListStart
+      \resumeItem{Developed multi-user live chat platform with typing indicators and MongoDB Atlas.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Udemy-Like Online Learning System (MERN Stack)}{}{https://github.com/navneetpathak1/New-Project}
+    \resumeItemListStart
+      \resumeItem{Created course platform with video streaming and Stripe-powered payments.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Achievements}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Hack the Spring '25 – Build for GEHU}{Apr 2025}
+    {GEHU, Bhimtal}{5\textsuperscript{th} Position out of 40+ Teams}
+    \resumeItemListStart
+      \resumeItem{Developed solution for university improvement and ranked in top 5.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {The Neural Nexus Hackathon}{May 2025}
+    {GEU, Dehradun}{Top 16 Finalist}
+    \resumeItemListStart
+      \resumeItem{Finalist among 100+ teams with an innovative tech-based project.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {LeetCode Competitive Programming}{2025}
+    {LeetCode Platform}{1500+ Rating}
+    \resumeItemListStart
+      \resumeItem{Demonstrated strong problem-solving ability with consistent practice in algorithms and data structures.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Generative AI Learning Plan for Developers}{Apr 2025}
+    {Amazon Web Services (AWS)}{}
+  \resumeSubheading
+    {AWS AI Practitioner Learning Plan}{Apr 2025}
+    {Amazon Web Services (AWS)}{}
+  \resumeSubheading
+    {Cloud Operator (SysOps) Learning Plan}{Apr 2025}
+    {Amazon Web Services (AWS)}{}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Languages:} C, C++, JavaScript, SQL, Python
+    \item \textbf{Frameworks:} React.js, Express.js, Node.js, Socket.IO
+    \item \textbf{Databases:} MongoDB, PostgreSQL, MySQL
+    \item \textbf{Tools:} AWS, Git, Github Postman, Prisma ORM
+    \item \textbf{Concepts:} DSA, REST APIs, Agile, Software Engineering
+\end{itemize}
+
+\end{document}
